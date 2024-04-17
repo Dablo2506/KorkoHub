@@ -1,0 +1,994 @@
+2024-02-19T00:12:46.755+01:00  INFO 20988 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 20988 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T00:12:46.763+01:00  INFO 20988 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T00:12:47.254+01:00  INFO 20988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T00:12:47.306+01:00  INFO 20988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 5 JPA repository interfaces.
+2024-02-19T00:12:47.687+01:00  INFO 20988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T00:12:47.708+01:00  INFO 20988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T00:12:47.709+01:00  INFO 20988 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T00:12:47.760+01:00  INFO 20988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T00:12:47.761+01:00  INFO 20988 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 965 ms
+2024-02-19T00:12:47.862+01:00  INFO 20988 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T00:12:47.910+01:00  INFO 20988 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T00:12:47.939+01:00  INFO 20988 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T00:12:48.115+01:00  INFO 20988 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T00:12:48.140+01:00  INFO 20988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T00:12:48.396+01:00  INFO 20988 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3c17bd0b
+2024-02-19T00:12:48.397+01:00  INFO 20988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T00:12:49.094+01:00  INFO 20988 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T00:12:49.106+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:12:49.107+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T00:12:49.107+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:12:49.107+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T00:12:49.107+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:12:49.107+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T00:12:49.108+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:12:49.108+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T00:12:49.108+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:12:49.108+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T00:12:49.108+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:12:49.109+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T00:12:49.109+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:12:49.109+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T00:12:49.109+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:12:49.109+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T00:12:49.110+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:12:49.110+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T00:12:49.110+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:12:49.110+01:00  WARN 20988 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T00:12:49.145+01:00  INFO 20988 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T00:12:49.427+01:00  WARN 20988 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T00:12:49.626+01:00  INFO 20988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T00:12:49.631+01:00  INFO 20988 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 3.226 seconds (process running for 3.759)
+2024-02-19T00:19:09.964+01:00  INFO 20988 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T00:19:09.965+01:00  INFO 20988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T00:19:09.966+01:00  INFO 20988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-19T00:42:08.761+01:00  INFO 20988 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T00:42:08.780+01:00  INFO 20988 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T00:42:08.781+01:00  INFO 20988 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T00:42:11.145+01:00  INFO 6140 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 6140 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T00:42:11.146+01:00  INFO 6140 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T00:42:11.504+01:00  INFO 6140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T00:42:11.541+01:00  INFO 6140 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 5 JPA repository interfaces.
+2024-02-19T00:42:11.840+01:00  INFO 6140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T00:42:11.847+01:00  INFO 6140 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T00:42:11.847+01:00  INFO 6140 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T00:42:11.885+01:00  INFO 6140 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T00:42:11.885+01:00  INFO 6140 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 710 ms
+2024-02-19T00:42:11.969+01:00  INFO 6140 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T00:42:12.002+01:00  INFO 6140 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T00:42:12.021+01:00  INFO 6140 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T00:42:12.172+01:00  INFO 6140 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T00:42:12.188+01:00  INFO 6140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T00:42:12.292+01:00  INFO 6140 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49e7e8f1
+2024-02-19T00:42:12.293+01:00  INFO 6140 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T00:42:12.876+01:00  INFO 6140 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T00:42:12.888+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:42:12.888+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T00:42:12.888+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:42:12.888+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T00:42:12.889+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:42:12.889+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T00:42:12.889+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:42:12.889+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T00:42:12.889+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:42:12.890+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T00:42:12.890+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:42:12.890+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T00:42:12.890+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:42:12.890+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T00:42:12.891+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:42:12.891+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T00:42:12.891+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:42:12.891+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T00:42:12.892+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:42:12.892+01:00  WARN 6140 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T00:42:12.921+01:00  INFO 6140 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T00:42:13.193+01:00  WARN 6140 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T00:42:13.383+01:00  INFO 6140 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T00:42:13.388+01:00  INFO 6140 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.491 seconds (process running for 2.867)
+2024-02-19T00:42:17.222+01:00  INFO 6140 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T00:42:17.223+01:00  INFO 6140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T00:42:17.223+01:00  INFO 6140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-19T00:46:39.000+01:00  INFO 6140 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T00:46:39.019+01:00  INFO 6140 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T00:46:39.021+01:00  INFO 6140 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T00:48:36.920+01:00  INFO 18324 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 18324 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T00:48:36.922+01:00  INFO 18324 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T00:48:37.312+01:00  INFO 18324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T00:48:37.354+01:00  INFO 18324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 5 JPA repository interfaces.
+2024-02-19T00:48:37.674+01:00  INFO 18324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T00:48:37.681+01:00  INFO 18324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T00:48:37.681+01:00  INFO 18324 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T00:48:37.718+01:00  INFO 18324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T00:48:37.719+01:00  INFO 18324 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 769 ms
+2024-02-19T00:48:37.806+01:00  INFO 18324 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T00:48:37.844+01:00  INFO 18324 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T00:48:37.866+01:00  INFO 18324 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T00:48:38.026+01:00  INFO 18324 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T00:48:38.042+01:00  INFO 18324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T00:48:38.156+01:00  INFO 18324 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@dd737ea
+2024-02-19T00:48:38.157+01:00  INFO 18324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T00:48:38.775+01:00  INFO 18324 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T00:48:38.786+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:38.786+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T00:48:38.786+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:38.786+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T00:48:38.787+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:38.787+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T00:48:38.787+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:38.787+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T00:48:38.787+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:38.788+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T00:48:38.788+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:38.788+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T00:48:38.789+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:38.789+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T00:48:38.789+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:38.789+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T00:48:38.790+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:38.790+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T00:48:38.790+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:38.790+01:00  WARN 18324 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T00:48:38.825+01:00  INFO 18324 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T00:48:39.106+01:00  WARN 18324 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T00:48:39.300+01:00  INFO 18324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T00:48:39.305+01:00  INFO 18324 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.652 seconds (process running for 3.069)
+2024-02-19T00:48:41.620+01:00  INFO 18324 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T00:48:41.636+01:00  INFO 18324 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T00:48:41.638+01:00  INFO 18324 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T00:48:46.077+01:00  INFO 3484 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 3484 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T00:48:46.079+01:00  INFO 3484 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T00:48:46.447+01:00  INFO 3484 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T00:48:46.486+01:00  INFO 3484 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 5 JPA repository interfaces.
+2024-02-19T00:48:46.782+01:00  INFO 3484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T00:48:46.789+01:00  INFO 3484 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T00:48:46.789+01:00  INFO 3484 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T00:48:46.823+01:00  INFO 3484 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T00:48:46.823+01:00  INFO 3484 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 716 ms
+2024-02-19T00:48:46.905+01:00  INFO 3484 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T00:48:46.938+01:00  INFO 3484 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T00:48:46.959+01:00  INFO 3484 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T00:48:47.109+01:00  INFO 3484 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T00:48:47.126+01:00  INFO 3484 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T00:48:47.226+01:00  INFO 3484 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@23b71d24
+2024-02-19T00:48:47.227+01:00  INFO 3484 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T00:48:47.817+01:00  INFO 3484 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T00:48:47.832+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:47.832+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T00:48:47.832+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:47.832+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T00:48:47.832+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:47.833+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T00:48:47.833+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:47.833+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T00:48:47.833+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:47.833+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T00:48:47.834+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:47.834+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T00:48:47.834+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:47.834+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T00:48:47.834+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:47.835+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T00:48:47.835+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:47.835+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T00:48:47.835+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:48:47.836+01:00  WARN 3484 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T00:48:47.890+01:00  INFO 3484 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T00:48:48.174+01:00  WARN 3484 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T00:48:48.392+01:00  INFO 3484 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T00:48:48.397+01:00  INFO 3484 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.575 seconds (process running for 2.96)
+2024-02-19T00:48:51.304+01:00  INFO 3484 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T00:48:51.305+01:00  INFO 3484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T00:48:51.305+01:00  INFO 3484 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-19T00:49:13.537+01:00  INFO 3484 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T00:49:13.553+01:00  INFO 3484 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T00:49:13.555+01:00  INFO 3484 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T00:52:36.378+01:00  INFO 19972 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 19972 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T00:52:36.380+01:00  INFO 19972 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T00:52:36.759+01:00  INFO 19972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T00:52:36.803+01:00  INFO 19972 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 5 JPA repository interfaces.
+2024-02-19T00:52:37.124+01:00  INFO 19972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T00:52:37.131+01:00  INFO 19972 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T00:52:37.131+01:00  INFO 19972 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T00:52:37.165+01:00  INFO 19972 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T00:52:37.166+01:00  INFO 19972 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 759 ms
+2024-02-19T00:52:37.247+01:00  INFO 19972 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T00:52:37.279+01:00  INFO 19972 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T00:52:37.298+01:00  INFO 19972 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T00:52:37.442+01:00  INFO 19972 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T00:52:37.458+01:00  INFO 19972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T00:52:37.555+01:00  INFO 19972 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@464ede1f
+2024-02-19T00:52:37.556+01:00  INFO 19972 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T00:52:38.121+01:00  INFO 19972 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T00:52:38.132+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:52:38.132+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T00:52:38.133+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:52:38.133+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T00:52:38.133+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:52:38.133+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T00:52:38.133+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:52:38.133+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T00:52:38.134+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:52:38.134+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T00:52:38.134+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:52:38.134+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T00:52:38.135+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:52:38.135+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T00:52:38.135+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:52:38.135+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T00:52:38.136+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:52:38.136+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T00:52:38.136+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T00:52:38.136+01:00  WARN 19972 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T00:52:38.191+01:00  INFO 19972 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T00:52:38.463+01:00  WARN 19972 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T00:52:38.652+01:00  INFO 19972 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T00:52:38.656+01:00  INFO 19972 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.523 seconds (process running for 2.925)
+2024-02-19T00:53:16.017+01:00  INFO 19972 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T00:53:16.017+01:00  INFO 19972 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T00:53:16.018+01:00  INFO 19972 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-19T01:14:45.183+01:00  INFO 19972 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T01:14:45.199+01:00  INFO 19972 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T01:14:45.200+01:00  INFO 19972 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T15:12:39.909+01:00  INFO 15060 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 15060 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T15:12:39.910+01:00  INFO 15060 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T15:12:40.309+01:00  INFO 15060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T15:12:40.353+01:00  INFO 15060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 5 JPA repository interfaces.
+2024-02-19T15:12:40.691+01:00  INFO 15060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T15:12:40.699+01:00  INFO 15060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T15:12:40.699+01:00  INFO 15060 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T15:12:40.735+01:00  INFO 15060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T15:12:40.736+01:00  INFO 15060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 795 ms
+2024-02-19T15:12:40.830+01:00  INFO 15060 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T15:12:40.877+01:00  INFO 15060 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T15:12:40.905+01:00  INFO 15060 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T15:12:41.083+01:00  INFO 15060 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T15:12:41.103+01:00  INFO 15060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T15:12:41.236+01:00  INFO 15060 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3d8d970e
+2024-02-19T15:12:41.237+01:00  INFO 15060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T15:12:41.880+01:00  INFO 15060 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T15:12:41.896+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:12:41.896+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T15:12:41.897+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:12:41.897+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T15:12:41.897+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:12:41.897+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T15:12:41.898+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:12:41.898+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T15:12:41.898+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:12:41.898+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T15:12:41.898+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:12:41.898+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T15:12:41.899+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:12:41.899+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T15:12:41.899+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:12:41.899+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T15:12:41.900+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:12:41.900+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T15:12:41.900+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:12:41.900+01:00  WARN 15060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T15:12:41.950+01:00  INFO 15060 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T15:12:42.244+01:00  WARN 15060 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T15:12:42.450+01:00  INFO 15060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T15:12:42.455+01:00  INFO 15060 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.816 seconds (process running for 3.251)
+2024-02-19T15:13:01.628+01:00  INFO 15060 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T15:13:01.629+01:00  INFO 15060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T15:13:01.629+01:00  INFO 15060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-19T15:13:01.654+01:00  WARN 15060 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type '*/*;charset=UTF-8' is not supported]
+2024-02-19T15:16:42.672+01:00  WARN 15060 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('"' (code 34)): was expecting comma to separate Object entries]
+2024-02-19T15:42:53.720+01:00  INFO 15060 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T15:42:53.746+01:00  INFO 15060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T15:42:53.748+01:00  INFO 15060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T15:43:01.339+01:00  INFO 7256 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 7256 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T15:43:01.340+01:00  INFO 7256 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T15:43:01.723+01:00  INFO 7256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T15:43:01.765+01:00  INFO 7256 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 5 JPA repository interfaces.
+2024-02-19T15:43:02.077+01:00  INFO 7256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T15:43:02.084+01:00  INFO 7256 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T15:43:02.084+01:00  INFO 7256 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T15:43:02.121+01:00  INFO 7256 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T15:43:02.121+01:00  INFO 7256 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 753 ms
+2024-02-19T15:43:02.202+01:00  INFO 7256 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T15:43:02.235+01:00  INFO 7256 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T15:43:02.254+01:00  INFO 7256 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T15:43:02.401+01:00  INFO 7256 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T15:43:02.417+01:00  INFO 7256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T15:43:02.516+01:00  INFO 7256 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27bb4dc5
+2024-02-19T15:43:02.517+01:00  INFO 7256 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T15:43:03.112+01:00  INFO 7256 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T15:43:03.123+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:43:03.123+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T15:43:03.123+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:43:03.123+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T15:43:03.124+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:43:03.124+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T15:43:03.124+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:43:03.124+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T15:43:03.124+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:43:03.124+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T15:43:03.125+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:43:03.125+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T15:43:03.125+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:43:03.125+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T15:43:03.125+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:43:03.126+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T15:43:03.126+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:43:03.126+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T15:43:03.126+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T15:43:03.126+01:00  WARN 7256 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T15:43:03.159+01:00  INFO 7256 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T15:43:03.440+01:00  WARN 7256 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T15:43:03.646+01:00  INFO 7256 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T15:43:03.651+01:00  INFO 7256 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.563 seconds (process running for 2.995)
+2024-02-19T15:43:03.694+01:00  INFO 7256 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T15:43:03.694+01:00  INFO 7256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T15:43:03.695+01:00  INFO 7256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-19T15:52:49.370+01:00  WARN 7256 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; For input string: "undefined"]
+2024-02-19T16:02:37.449+01:00  INFO 7256 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T16:02:37.468+01:00  INFO 7256 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T16:02:37.470+01:00  INFO 7256 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T16:02:44.622+01:00  INFO 11896 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 11896 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T16:02:44.624+01:00  INFO 11896 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T16:02:45.026+01:00  INFO 11896 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T16:02:45.066+01:00  INFO 11896 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 5 JPA repository interfaces.
+2024-02-19T16:02:45.382+01:00  INFO 11896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T16:02:45.390+01:00  INFO 11896 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T16:02:45.390+01:00  INFO 11896 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T16:02:45.424+01:00  INFO 11896 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T16:02:45.424+01:00  INFO 11896 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 761 ms
+2024-02-19T16:02:45.516+01:00  INFO 11896 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T16:02:45.550+01:00  INFO 11896 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T16:02:45.572+01:00  INFO 11896 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T16:02:45.725+01:00  INFO 11896 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T16:02:45.742+01:00  INFO 11896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T16:02:45.845+01:00  INFO 11896 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49e7e8f1
+2024-02-19T16:02:45.846+01:00  INFO 11896 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T16:02:46.448+01:00  INFO 11896 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T16:02:46.459+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T16:02:46.459+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T16:02:46.460+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T16:02:46.460+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T16:02:46.460+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T16:02:46.460+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T16:02:46.460+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T16:02:46.460+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T16:02:46.461+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T16:02:46.461+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T16:02:46.461+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T16:02:46.461+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T16:02:46.462+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T16:02:46.462+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T16:02:46.462+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T16:02:46.462+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T16:02:46.462+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T16:02:46.463+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T16:02:46.463+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T16:02:46.463+01:00  WARN 11896 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T16:02:46.491+01:00  INFO 11896 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T16:02:46.759+01:00  WARN 11896 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T16:02:46.948+01:00  INFO 11896 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T16:02:46.952+01:00  INFO 11896 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.605 seconds (process running for 2.989)
+2024-02-19T16:08:05.690+01:00  INFO 11896 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T16:08:05.690+01:00  INFO 11896 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T16:08:05.691+01:00  INFO 11896 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-19T17:06:51.267+01:00  INFO 11896 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T17:06:51.284+01:00  INFO 11896 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T17:06:51.285+01:00  INFO 11896 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T17:06:54.139+01:00  INFO 1340 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 1340 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T17:06:54.140+01:00  INFO 1340 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T17:06:54.514+01:00  INFO 1340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T17:06:54.557+01:00  INFO 1340 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 5 JPA repository interfaces.
+2024-02-19T17:06:54.852+01:00  INFO 1340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T17:06:54.859+01:00  INFO 1340 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T17:06:54.859+01:00  INFO 1340 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T17:06:54.894+01:00  INFO 1340 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T17:06:54.894+01:00  INFO 1340 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 725 ms
+2024-02-19T17:06:54.973+01:00  INFO 1340 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T17:06:55.006+01:00  INFO 1340 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T17:06:55.025+01:00  INFO 1340 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T17:06:55.169+01:00  INFO 1340 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T17:06:55.184+01:00  INFO 1340 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T17:06:55.283+01:00  INFO 1340 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@510da778
+2024-02-19T17:06:55.284+01:00  INFO 1340 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T17:06:55.859+01:00  INFO 1340 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T17:06:55.869+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:06:55.869+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T17:06:55.869+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:06:55.869+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T17:06:55.870+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:06:55.870+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T17:06:55.870+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:06:55.870+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T17:06:55.870+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:06:55.870+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T17:06:55.871+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:06:55.871+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T17:06:55.871+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:06:55.871+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T17:06:55.871+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:06:55.872+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T17:06:55.872+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:06:55.872+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T17:06:55.872+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:06:55.872+01:00  WARN 1340 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T17:06:55.925+01:00  INFO 1340 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T17:06:56.189+01:00  WARN 1340 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T17:06:56.377+01:00  INFO 1340 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T17:06:56.381+01:00  INFO 1340 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.502 seconds (process running for 2.878)
+2024-02-19T17:06:58.077+01:00  INFO 1340 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T17:06:58.077+01:00  INFO 1340 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T17:06:58.078+01:00  INFO 1340 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-19T17:14:00.028+01:00  WARN 1340 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'tutoringAdId' for method parameter type Integer is not present]
+2024-02-19T17:14:34.182+01:00  WARN 1340 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'tutoringAdId' for method parameter type Integer is not present]
+2024-02-19T17:14:52.069+01:00  WARN 1340 --- [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'tutoringAdId' for method parameter type Integer is not present]
+2024-02-19T17:15:15.041+01:00  WARN 1340 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'tutoringAdId' for method parameter type Integer is not present]
+2024-02-19T17:15:21.577+01:00  WARN 1340 --- [http-nio-8080-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'tutoringAdId' for method parameter type Integer is not present]
+2024-02-19T17:15:37.983+01:00  WARN 1340 --- [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'tutoringAdId' for method parameter type Integer is not present]
+2024-02-19T17:15:41.013+01:00  WARN 1340 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'tutoringAdId' for method parameter type Integer is not present]
+2024-02-19T17:19:22.344+01:00  INFO 1340 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T17:19:22.365+01:00  INFO 1340 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T17:19:22.367+01:00  INFO 1340 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T17:19:23.788+01:00  INFO 15576 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 15576 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T17:19:23.789+01:00  INFO 15576 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T17:19:24.141+01:00  INFO 15576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T17:19:24.179+01:00  INFO 15576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 5 JPA repository interfaces.
+2024-02-19T17:19:24.465+01:00  INFO 15576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T17:19:24.472+01:00  INFO 15576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T17:19:24.472+01:00  INFO 15576 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T17:19:24.503+01:00  INFO 15576 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T17:19:24.503+01:00  INFO 15576 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 688 ms
+2024-02-19T17:19:24.582+01:00  INFO 15576 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T17:19:24.614+01:00  INFO 15576 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T17:19:24.636+01:00  INFO 15576 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T17:19:24.781+01:00  INFO 15576 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T17:19:24.796+01:00  INFO 15576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T17:19:24.894+01:00  INFO 15576 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49e7e8f1
+2024-02-19T17:19:24.895+01:00  INFO 15576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T17:19:25.468+01:00  INFO 15576 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T17:19:25.479+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:19:25.479+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T17:19:25.479+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:19:25.479+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T17:19:25.480+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:19:25.480+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T17:19:25.480+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:19:25.480+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T17:19:25.480+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:19:25.480+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T17:19:25.481+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:19:25.481+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T17:19:25.481+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:19:25.481+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T17:19:25.481+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:19:25.482+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T17:19:25.482+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:19:25.482+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T17:19:25.482+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:19:25.482+01:00  WARN 15576 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T17:19:25.536+01:00  INFO 15576 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T17:19:25.806+01:00  WARN 15576 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T17:19:26.001+01:00  INFO 15576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T17:19:26.006+01:00  INFO 15576 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.462 seconds (process running for 2.83)
+2024-02-19T17:19:28.038+01:00  INFO 15576 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T17:19:28.038+01:00  INFO 15576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T17:19:28.039+01:00  INFO 15576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-19T17:26:51.093+01:00  INFO 15576 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T17:26:51.108+01:00  INFO 15576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T17:26:51.111+01:00  INFO 15576 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T17:26:52.637+01:00  INFO 15352 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 15352 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T17:26:52.638+01:00  INFO 15352 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T17:26:53.029+01:00  INFO 15352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T17:26:53.076+01:00  INFO 15352 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 5 JPA repository interfaces.
+2024-02-19T17:26:53.382+01:00  INFO 15352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T17:26:53.393+01:00  INFO 15352 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T17:26:53.394+01:00  INFO 15352 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T17:26:53.426+01:00  INFO 15352 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T17:26:53.427+01:00  INFO 15352 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 757 ms
+2024-02-19T17:26:53.513+01:00  INFO 15352 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T17:26:53.547+01:00  INFO 15352 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T17:26:53.566+01:00  INFO 15352 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T17:26:53.718+01:00  INFO 15352 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T17:26:53.735+01:00  INFO 15352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T17:26:53.834+01:00  INFO 15352 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27bb4dc5
+2024-02-19T17:26:53.835+01:00  INFO 15352 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T17:26:54.419+01:00  INFO 15352 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T17:26:54.429+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:26:54.430+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T17:26:54.430+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:26:54.430+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T17:26:54.430+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:26:54.430+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T17:26:54.431+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:26:54.431+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T17:26:54.431+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:26:54.431+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T17:26:54.431+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:26:54.431+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T17:26:54.432+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:26:54.432+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T17:26:54.432+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:26:54.432+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T17:26:54.433+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:26:54.433+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T17:26:54.433+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:26:54.433+01:00  WARN 15352 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T17:26:54.461+01:00  INFO 15352 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T17:26:54.736+01:00  WARN 15352 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T17:26:54.953+01:00  INFO 15352 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T17:26:54.958+01:00  INFO 15352 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.579 seconds (process running for 3.034)
+2024-02-19T17:26:59.213+01:00  INFO 15352 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T17:26:59.213+01:00  INFO 15352 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T17:26:59.214+01:00  INFO 15352 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-19T17:30:01.014+01:00  INFO 15352 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T17:30:01.034+01:00  INFO 15352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T17:30:01.036+01:00  INFO 15352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T17:30:02.442+01:00  INFO 16836 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 16836 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T17:30:02.444+01:00  INFO 16836 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T17:30:02.812+01:00  INFO 16836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T17:30:02.851+01:00  INFO 16836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 5 JPA repository interfaces.
+2024-02-19T17:30:03.160+01:00  INFO 16836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T17:30:03.167+01:00  INFO 16836 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T17:30:03.167+01:00  INFO 16836 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T17:30:03.205+01:00  INFO 16836 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T17:30:03.205+01:00  INFO 16836 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 729 ms
+2024-02-19T17:30:03.288+01:00  INFO 16836 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T17:30:03.320+01:00  INFO 16836 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T17:30:03.339+01:00  INFO 16836 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T17:30:03.485+01:00  INFO 16836 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T17:30:03.501+01:00  INFO 16836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T17:30:03.599+01:00  INFO 16836 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7bc2ae16
+2024-02-19T17:30:03.600+01:00  INFO 16836 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T17:30:04.173+01:00  INFO 16836 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T17:30:04.183+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:30:04.183+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T17:30:04.184+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:30:04.184+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T17:30:04.184+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:30:04.184+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T17:30:04.184+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:30:04.184+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T17:30:04.185+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:30:04.185+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T17:30:04.185+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:30:04.185+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T17:30:04.185+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:30:04.185+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T17:30:04.186+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:30:04.186+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T17:30:04.186+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:30:04.186+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T17:30:04.187+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:30:04.187+01:00  WARN 16836 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T17:30:04.214+01:00  INFO 16836 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T17:30:04.479+01:00  WARN 16836 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T17:30:04.666+01:00  INFO 16836 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T17:30:04.671+01:00  INFO 16836 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.489 seconds (process running for 2.857)
+2024-02-19T17:30:26.285+01:00  INFO 16836 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T17:30:26.285+01:00  INFO 16836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T17:30:26.286+01:00  INFO 16836 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-19T17:39:47.091+01:00  INFO 16836 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T17:39:47.106+01:00  INFO 16836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T17:39:47.108+01:00  INFO 16836 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T17:39:48.396+01:00  INFO 17544 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 17544 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T17:39:48.397+01:00  INFO 17544 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T17:39:48.764+01:00  INFO 17544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T17:39:48.802+01:00  INFO 17544 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 5 JPA repository interfaces.
+2024-02-19T17:39:49.095+01:00  INFO 17544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T17:39:49.101+01:00  INFO 17544 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T17:39:49.102+01:00  INFO 17544 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T17:39:49.138+01:00  INFO 17544 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T17:39:49.139+01:00  INFO 17544 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 712 ms
+2024-02-19T17:39:49.216+01:00  INFO 17544 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T17:39:49.249+01:00  INFO 17544 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T17:39:49.268+01:00  INFO 17544 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T17:39:49.414+01:00  INFO 17544 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T17:39:49.430+01:00  INFO 17544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T17:39:49.529+01:00  INFO 17544 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27bb4dc5
+2024-02-19T17:39:49.530+01:00  INFO 17544 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T17:39:50.099+01:00  INFO 17544 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T17:39:50.109+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:39:50.109+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T17:39:50.109+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:39:50.110+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T17:39:50.110+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:39:50.110+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T17:39:50.110+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:39:50.110+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T17:39:50.110+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:39:50.110+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T17:39:50.111+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:39:50.111+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T17:39:50.111+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:39:50.111+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T17:39:50.111+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:39:50.111+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T17:39:50.112+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:39:50.112+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T17:39:50.112+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:39:50.112+01:00  WARN 17544 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T17:39:50.138+01:00  INFO 17544 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T17:39:50.397+01:00  WARN 17544 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T17:39:50.585+01:00  INFO 17544 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T17:39:50.590+01:00  INFO 17544 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.44 seconds (process running for 2.819)
+2024-02-19T17:40:04.352+01:00  INFO 17544 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T17:40:04.352+01:00  INFO 17544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T17:40:04.353+01:00  INFO 17544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-19T17:48:28.766+01:00  INFO 17544 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T17:48:28.782+01:00  INFO 17544 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T17:48:28.783+01:00  INFO 17544 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T17:51:19.280+01:00  INFO 18296 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 18296 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T17:51:19.281+01:00  INFO 18296 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T17:51:19.647+01:00  INFO 18296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T17:51:19.684+01:00  INFO 18296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 5 JPA repository interfaces.
+2024-02-19T17:51:19.973+01:00  INFO 18296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T17:51:19.980+01:00  INFO 18296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T17:51:19.980+01:00  INFO 18296 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T17:51:20.015+01:00  INFO 18296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T17:51:20.015+01:00  INFO 18296 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 705 ms
+2024-02-19T17:51:20.094+01:00  INFO 18296 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T17:51:20.127+01:00  INFO 18296 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T17:51:20.147+01:00  INFO 18296 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T17:51:20.296+01:00  INFO 18296 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T17:51:20.312+01:00  INFO 18296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T17:51:20.413+01:00  INFO 18296 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49e7e8f1
+2024-02-19T17:51:20.414+01:00  INFO 18296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T17:51:20.987+01:00  INFO 18296 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T17:51:20.997+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:51:20.997+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T17:51:20.998+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:51:20.998+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T17:51:20.998+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:51:20.998+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T17:51:20.998+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:51:20.998+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T17:51:20.998+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:51:20.998+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T17:51:20.999+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:51:20.999+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T17:51:20.999+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:51:20.999+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T17:51:20.999+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:51:21.000+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T17:51:21.000+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:51:21.000+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T17:51:21.000+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T17:51:21.000+01:00  WARN 18296 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T17:51:21.052+01:00  INFO 18296 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T17:51:21.316+01:00  WARN 18296 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T17:51:21.499+01:00  INFO 18296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T17:51:21.504+01:00  INFO 18296 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.471 seconds (process running for 2.833)
+2024-02-19T17:51:27.286+01:00  INFO 18296 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T17:51:27.286+01:00  INFO 18296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T17:51:27.286+01:00  INFO 18296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-19T17:51:54.615+01:00  INFO 18296 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T17:51:54.631+01:00  INFO 18296 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T17:51:54.633+01:00  INFO 18296 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T18:23:32.720+01:00  INFO 12984 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 12984 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T18:23:32.721+01:00  INFO 12984 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T18:23:33.100+01:00  INFO 12984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T18:23:33.139+01:00  INFO 12984 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 5 JPA repository interfaces.
+2024-02-19T18:23:33.461+01:00  INFO 12984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T18:23:33.468+01:00  INFO 12984 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T18:23:33.469+01:00  INFO 12984 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T18:23:33.509+01:00  INFO 12984 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T18:23:33.509+01:00  INFO 12984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 760 ms
+2024-02-19T18:23:33.592+01:00  INFO 12984 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T18:23:33.626+01:00  INFO 12984 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T18:23:33.646+01:00  INFO 12984 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T18:23:33.809+01:00  INFO 12984 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T18:23:33.825+01:00  INFO 12984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T18:23:33.927+01:00  INFO 12984 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3d8d970e
+2024-02-19T18:23:33.928+01:00  INFO 12984 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T18:23:34.519+01:00  INFO 12984 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T18:23:34.530+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T18:23:34.530+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T18:23:34.530+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T18:23:34.530+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T18:23:34.531+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T18:23:34.531+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T18:23:34.531+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T18:23:34.531+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T18:23:34.532+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T18:23:34.532+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T18:23:34.532+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T18:23:34.532+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T18:23:34.533+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T18:23:34.533+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T18:23:34.533+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T18:23:34.533+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T18:23:34.534+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T18:23:34.534+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T18:23:34.534+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T18:23:34.534+01:00  WARN 12984 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T18:23:34.590+01:00  INFO 12984 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T18:23:34.853+01:00  WARN 12984 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T18:23:35.040+01:00  INFO 12984 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T18:23:35.045+01:00  INFO 12984 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.591 seconds (process running for 2.992)
+2024-02-19T18:23:36.867+01:00  INFO 12984 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T18:23:36.867+01:00  INFO 12984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T18:23:36.868+01:00  INFO 12984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-19T18:43:51.736+01:00  INFO 12984 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T18:43:51.751+01:00  INFO 12984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T18:43:51.753+01:00  INFO 12984 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T19:33:49.441+01:00  INFO 8724 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 8724 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T19:33:49.442+01:00  INFO 8724 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T19:33:49.836+01:00  INFO 8724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T19:33:49.877+01:00  INFO 8724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 5 JPA repository interfaces.
+2024-02-19T19:33:50.220+01:00  INFO 8724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T19:33:50.234+01:00  INFO 8724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T19:33:50.234+01:00  INFO 8724 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T19:33:50.276+01:00  INFO 8724 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T19:33:50.277+01:00  INFO 8724 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 806 ms
+2024-02-19T19:33:50.398+01:00  INFO 8724 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T19:33:50.451+01:00  INFO 8724 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T19:33:50.480+01:00  INFO 8724 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T19:33:50.676+01:00  INFO 8724 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T19:33:50.698+01:00  INFO 8724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T19:33:50.819+01:00  INFO 8724 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@510da778
+2024-02-19T19:33:50.820+01:00  INFO 8724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T19:33:51.479+01:00  INFO 8724 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T19:33:51.491+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T19:33:51.491+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T19:33:51.491+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T19:33:51.491+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T19:33:51.492+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T19:33:51.492+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T19:33:51.492+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T19:33:51.492+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T19:33:51.492+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T19:33:51.493+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T19:33:51.493+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T19:33:51.493+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T19:33:51.494+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T19:33:51.494+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T19:33:51.494+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T19:33:51.494+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T19:33:51.495+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T19:33:51.495+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T19:33:51.495+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T19:33:51.495+01:00  WARN 8724 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T19:33:51.528+01:00  INFO 8724 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T19:33:51.842+01:00  WARN 8724 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T19:33:52.041+01:00  INFO 8724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T19:33:52.046+01:00  INFO 8724 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.884 seconds (process running for 3.345)
+2024-02-19T19:34:35.763+01:00  INFO 8724 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T19:34:35.763+01:00  INFO 8724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T19:34:35.764+01:00  INFO 8724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-19T19:55:34.357+01:00  INFO 8724 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T19:55:34.372+01:00  INFO 8724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T19:55:34.374+01:00  INFO 8724 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T20:03:42.215+01:00  INFO 14060 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 14060 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T20:03:42.216+01:00  INFO 14060 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T20:03:42.624+01:00  INFO 14060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T20:03:42.663+01:00  INFO 14060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 5 JPA repository interfaces.
+2024-02-19T20:03:42.959+01:00  INFO 14060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T20:03:42.966+01:00  INFO 14060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T20:03:42.967+01:00  INFO 14060 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T20:03:43.009+01:00  INFO 14060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T20:03:43.009+01:00  INFO 14060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 765 ms
+2024-02-19T20:03:43.092+01:00  INFO 14060 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T20:03:43.125+01:00  INFO 14060 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T20:03:43.147+01:00  INFO 14060 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T20:03:43.315+01:00  INFO 14060 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T20:03:43.331+01:00  INFO 14060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T20:03:43.432+01:00  INFO 14060 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49e7e8f1
+2024-02-19T20:03:43.433+01:00  INFO 14060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T20:03:44.015+01:00  INFO 14060 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T20:03:44.025+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:03:44.026+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T20:03:44.026+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:03:44.026+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T20:03:44.026+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:03:44.026+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T20:03:44.027+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:03:44.027+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T20:03:44.027+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:03:44.027+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T20:03:44.027+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:03:44.027+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T20:03:44.028+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:03:44.028+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T20:03:44.028+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:03:44.028+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T20:03:44.028+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:03:44.028+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T20:03:44.029+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:03:44.029+01:00  WARN 14060 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T20:03:44.061+01:00  INFO 14060 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T20:03:44.335+01:00  WARN 14060 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T20:03:44.525+01:00  INFO 14060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T20:03:44.529+01:00  INFO 14060 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.578 seconds (process running for 2.982)
+2024-02-19T20:04:29.461+01:00  INFO 14060 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T20:04:29.462+01:00  INFO 14060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T20:04:29.462+01:00  INFO 14060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-19T20:07:34.469+01:00  INFO 14060 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T20:07:34.484+01:00  INFO 14060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T20:07:34.486+01:00  INFO 14060 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T20:07:36.574+01:00  INFO 5884 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 5884 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T20:07:36.579+01:00  INFO 5884 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T20:07:36.939+01:00  INFO 5884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T20:07:36.980+01:00  INFO 5884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 5 JPA repository interfaces.
+2024-02-19T20:07:37.277+01:00  INFO 5884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T20:07:37.284+01:00  INFO 5884 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T20:07:37.284+01:00  INFO 5884 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T20:07:37.320+01:00  INFO 5884 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T20:07:37.320+01:00  INFO 5884 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 713 ms
+2024-02-19T20:07:37.402+01:00  INFO 5884 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T20:07:37.436+01:00  INFO 5884 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T20:07:37.455+01:00  INFO 5884 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T20:07:37.602+01:00  INFO 5884 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T20:07:37.618+01:00  INFO 5884 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T20:07:37.715+01:00  INFO 5884 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7d3bf8db
+2024-02-19T20:07:37.716+01:00  INFO 5884 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T20:07:38.293+01:00  INFO 5884 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T20:07:38.304+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:07:38.305+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T20:07:38.305+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:07:38.305+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T20:07:38.305+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:07:38.305+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T20:07:38.306+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:07:38.306+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T20:07:38.306+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:07:38.306+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T20:07:38.306+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:07:38.306+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T20:07:38.307+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:07:38.307+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T20:07:38.307+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:07:38.307+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T20:07:38.307+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:07:38.307+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T20:07:38.308+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:07:38.308+01:00  WARN 5884 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T20:07:38.336+01:00  INFO 5884 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T20:07:38.615+01:00  WARN 5884 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T20:07:38.803+01:00  INFO 5884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T20:07:38.808+01:00  INFO 5884 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.484 seconds (process running for 2.877)
+2024-02-19T20:07:45.154+01:00  INFO 5884 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T20:07:45.155+01:00  INFO 5884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T20:07:45.155+01:00  INFO 5884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-02-19T20:11:28.993+01:00  INFO 5884 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T20:11:29.018+01:00  INFO 5884 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T20:11:29.020+01:00  INFO 5884 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T20:11:30.499+01:00  INFO 12204 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 12204 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T20:11:30.500+01:00  INFO 12204 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T20:11:30.880+01:00  INFO 12204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T20:11:30.918+01:00  INFO 12204 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 5 JPA repository interfaces.
+2024-02-19T20:11:31.214+01:00  INFO 12204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T20:11:31.222+01:00  INFO 12204 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T20:11:31.222+01:00  INFO 12204 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T20:11:31.259+01:00  INFO 12204 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T20:11:31.259+01:00  INFO 12204 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 731 ms
+2024-02-19T20:11:31.342+01:00  INFO 12204 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T20:11:31.379+01:00  INFO 12204 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T20:11:31.407+01:00  INFO 12204 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T20:11:31.575+01:00  INFO 12204 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T20:11:31.595+01:00  INFO 12204 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T20:11:31.701+01:00  INFO 12204 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@23b71d24
+2024-02-19T20:11:31.702+01:00  INFO 12204 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T20:11:32.329+01:00  INFO 12204 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T20:11:32.342+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:11:32.342+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T20:11:32.342+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:11:32.342+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T20:11:32.342+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:11:32.342+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T20:11:32.343+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:11:32.343+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T20:11:32.343+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:11:32.343+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T20:11:32.343+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:11:32.343+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T20:11:32.344+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:11:32.344+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T20:11:32.344+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:11:32.344+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T20:11:32.344+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:11:32.345+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T20:11:32.345+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:11:32.345+01:00  WARN 12204 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T20:11:32.399+01:00  INFO 12204 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T20:11:32.687+01:00  WARN 12204 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T20:11:32.890+01:00  INFO 12204 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T20:11:32.896+01:00  INFO 12204 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.673 seconds (process running for 3.075)
+2024-02-19T20:12:17.487+01:00  INFO 12204 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T20:12:17.487+01:00  INFO 12204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T20:12:17.488+01:00  INFO 12204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-19T20:18:53.386+01:00  INFO 12204 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T20:18:53.402+01:00  INFO 12204 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T20:18:53.404+01:00  INFO 12204 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T20:18:54.901+01:00  INFO 2860 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 2860 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T20:18:54.902+01:00  INFO 2860 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T20:18:55.280+01:00  INFO 2860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T20:18:55.320+01:00  INFO 2860 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 5 JPA repository interfaces.
+2024-02-19T20:18:55.635+01:00  INFO 2860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T20:18:55.642+01:00  INFO 2860 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T20:18:55.642+01:00  INFO 2860 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T20:18:55.680+01:00  INFO 2860 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T20:18:55.680+01:00  INFO 2860 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 748 ms
+2024-02-19T20:18:55.763+01:00  INFO 2860 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T20:18:55.797+01:00  INFO 2860 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T20:18:55.818+01:00  INFO 2860 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T20:18:55.971+01:00  INFO 2860 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T20:18:55.988+01:00  INFO 2860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T20:18:56.092+01:00  INFO 2860 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7d3bf8db
+2024-02-19T20:18:56.093+01:00  INFO 2860 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T20:18:56.685+01:00  INFO 2860 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T20:18:56.696+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:18:56.696+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T20:18:56.697+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:18:56.697+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T20:18:56.697+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:18:56.697+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T20:18:56.697+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:18:56.697+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T20:18:56.698+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:18:56.698+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T20:18:56.698+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:18:56.698+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T20:18:56.699+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:18:56.699+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T20:18:56.699+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:18:56.699+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T20:18:56.699+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:18:56.700+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T20:18:56.700+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:18:56.700+01:00  WARN 2860 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T20:18:56.753+01:00  INFO 2860 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T20:18:57.033+01:00  WARN 2860 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T20:18:57.227+01:00  INFO 2860 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T20:18:57.232+01:00  INFO 2860 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.58 seconds (process running for 3.012)
+2024-02-19T20:19:02.864+01:00  INFO 2860 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T20:19:02.864+01:00  INFO 2860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T20:19:02.865+01:00  INFO 2860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-19T20:23:45.494+01:00  INFO 2860 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T20:23:45.510+01:00  INFO 2860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T20:23:45.512+01:00  INFO 2860 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-02-19T20:23:47.004+01:00  INFO 6692 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication using Java 21.0.1 with PID 6692 (C:\GitHub\korkohub\korkohub\backend\demo\target\classes started by pbedn in C:\GitHub\korkohub\korkohub\backend)
+2024-02-19T20:23:47.006+01:00  INFO 6692 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-02-19T20:23:47.386+01:00  INFO 6692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-19T20:23:47.425+01:00  INFO 6692 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 5 JPA repository interfaces.
+2024-02-19T20:23:47.735+01:00  INFO 6692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-02-19T20:23:47.743+01:00  INFO 6692 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-19T20:23:47.743+01:00  INFO 6692 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-02-19T20:23:47.780+01:00  INFO 6692 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-19T20:23:47.780+01:00  INFO 6692 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 746 ms
+2024-02-19T20:23:47.865+01:00  INFO 6692 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-19T20:23:47.900+01:00  INFO 6692 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-02-19T20:23:47.920+01:00  INFO 6692 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-02-19T20:23:48.074+01:00  INFO 6692 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-19T20:23:48.090+01:00  INFO 6692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-02-19T20:23:48.189+01:00  INFO 6692 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@49e7e8f1
+2024-02-19T20:23:48.191+01:00  INFO 6692 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-02-19T20:23:48.788+01:00  INFO 6692 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-19T20:23:48.799+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:23:48.799+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "admin" nie istnieje, pominięto
+2024-02-19T20:23:48.800+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:23:48.800+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "lesson" nie istnieje, pominięto
+2024-02-19T20:23:48.800+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:23:48.800+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutor" nie istnieje, pominięto
+2024-02-19T20:23:48.800+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:23:48.800+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "tutoring_ad" nie istnieje, pominięto
+2024-02-19T20:23:48.801+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:23:48.801+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : tabela "users" nie istnieje, pominięto
+2024-02-19T20:23:48.801+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:23:48.801+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "admin_sequence" nie istnieje, pominięto
+2024-02-19T20:23:48.801+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:23:48.801+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "lesson_sequence" nie istnieje, pominięto
+2024-02-19T20:23:48.802+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:23:48.802+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutor_sequence" nie istnieje, pominięto
+2024-02-19T20:23:48.802+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:23:48.802+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "tutoring_ad_sequence" nie istnieje, pominięto
+2024-02-19T20:23:48.803+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Warning Code: 0, SQLState: 00000
+2024-02-19T20:23:48.803+01:00  WARN 6692 --- [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : sekwencja "user_sequence" nie istnieje, pominięto
+2024-02-19T20:23:48.831+01:00  INFO 6692 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T20:23:49.101+01:00  WARN 6692 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-19T20:23:49.289+01:00  INFO 6692 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-02-19T20:23:49.294+01:00  INFO 6692 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 2.563 seconds (process running for 2.988)
+2024-02-19T20:24:03.984+01:00  INFO 6692 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-19T20:24:03.984+01:00  INFO 6692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-19T20:24:03.985+01:00  INFO 6692 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-02-19T20:30:17.619+01:00  INFO 6692 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-19T20:30:17.639+01:00  INFO 6692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-02-19T20:30:17.641+01:00  INFO 6692 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
