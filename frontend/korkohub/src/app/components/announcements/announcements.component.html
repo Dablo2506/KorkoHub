@@ -1,0 +1,4 @@
+<button mat-button class=" custom-color" (click)="openDialog()" [disabled]="!isLoggedTuttor || !isLogged">Dodaj głoszenie</button>
+<div class="wrap">
+      <app-announcement *ngFor="let tutorAd of tutorAds | async ;track trackById" [tutorAd]="tutorAd" [buttonFunction]="buttonFunction"></app-announcement>
+</div>

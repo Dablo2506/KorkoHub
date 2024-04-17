@@ -1,0 +1,22 @@
+<div class="dialog">
+  <div class="header">
+    <p class="description">Podaj treść ogłoszenia</p>
+    <button mat-button class="icon-button" mat-dialog-close><mat-icon>close</mat-icon></button>
+  </div>
+  <form [formGroup]="form" class="userData">
+    <textarea 
+    class="search-input" 
+    autofocus cdkFocusInitial 
+    maxlength="250" 
+    [(ngModel)]="description"
+    formControlName="description"
+  ></textarea>
+  <div class="center-error" *ngIf="form.get('description')?.touched && form.get('description')?.invalid">
+  </div>
+  <p class="price">Podaj cenę</p>
+  <div class="search-container">
+    <input type="number" placeholder="Cena" class="search-input-price" formControlName="price" [(ngModel)]="price">
+  </div>
+  </form>
+  <button mat-button class=" custom-color"  [disabled]="form.invalid" (click)="addNewAd()">Dodaj</button>
+</div>

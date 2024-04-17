@@ -1,0 +1,120 @@
+@import './../../../colors';
+
+.container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    width: 65%;
+
+    &.button-custom{
+        text-align: center;
+    }
+}
+
+.text{
+    &-main{
+        width: fit-content;
+        margin: auto;
+        font-family: Caveat, serif;
+        font-size: 60px;
+        font-weight: bold;
+        color: $salmon;
+    }
+
+    &-section p{
+        font-size: 27px;
+        line-height: 1.2;
+        font-family: Caveat, serif;
+        color: $salmon;
+        text-align: center;
+    }
+}
+
+.opinion {
+    &-section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        transition: transform 0.3s;
+    
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+
+    &-box{
+        background-color: $dark;
+        border-left: 4px solid $pink;
+        border-radius: 20%; 
+        margin: 10px 0;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        max-width: 600px;
+    }
+
+    &-text{
+        color: $salmon;
+    }
+
+    &-author{
+        text-align: right;
+        font-weight: bold;
+        color: $salmon;
+        margin-top: 10px;
+    }
+}
+
+h1 {
+    font-family: Caveat, serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: $pink;
+
+    .highlight {
+        color: $pink;
+    }
+}
+
+.mat-mdc-button:not(:disabled){
+    color: $salmon;
+    font-weight: bold;
+    font-family: Caveat, serif;
+    font-size: 38px;
+
+    & .hub{
+        color: $pink;
+    }
+}
+
+.button-custom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+i{
+    margin-top: 10px;
+    color: $pink;
+    font-size: 29px;
+
+    &.left{
+        margin-right: 20px;
+    }
+
+    &.right{
+        margin-left: 25px;
+    }
+}

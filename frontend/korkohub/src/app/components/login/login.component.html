@@ -1,0 +1,62 @@
+<div class="login-box">
+  <div *ngIf="isLogin; else registration" class="container">
+    <h2>Logowanie</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin()" class="userData">
+      <input type="text" placeholder="Email" formControlName="email">
+      <div class="center-error" *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.invalid">
+        <small class="error" *ngIf="loginForm.get('email')?.errors?.['required']">Email jest wymagany</small>
+        <small class="error" *ngIf="loginForm.get('email')?.errors?.['email']">Podaj prawidłowy adres email</small>
+      </div>
+      <br>
+      <input type="password" placeholder="Hasło" formControlName="password">
+      <div class="center-error" *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid">
+        <small class="error" *ngIf="loginForm.get('password')?.errors?.['required']">Hasło jest wymagane</small>
+      </div>
+    </form>
+    <button mat-button [disabled]="loginForm.invalid" (click)="onLogin()">Login</button>
+    <button mat-button (click)="onChange()">Rejestracja</button>
+    <p *ngIf="isLoginError">Błąd logowania</p>
+  </div>
+  <ng-template #registration>
+    <div class="container">
+      <h2>Rejestracja</h2>
+      <form [formGroup]="registerForm" class="userData">
+        <input type="text" placeholder="Imię" formControlName="name">
+        <div class="center-error" *ngIf="registerForm.get('name')?.touched && registerForm.get('name')?.invalid">
+          <small class="error" *ngIf="registerForm.get('name')?.errors?.['required']">Imię jest wymagane</small>
+        </div>
+        <br>
+        <input type="text" placeholder="Nazwisko" formControlName="surname">
+        <div class="center-error" *ngIf="registerForm.get('surname')?.touched && registerForm.get('surname')?.invalid">
+          <small class="error" *ngIf="registerForm.get('surname')?.errors?.['required']">Nazwisko jest wymagane</small>
+        </div>
+        <br>
+        <input type="text" placeholder="Email" formControlName="email">
+        <div class="center-error" *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.invalid">
+          <small class="error" *ngIf="registerForm.get('email')?.errors?.['required']">Email jest wymagany</small>
+          <small class="error" *ngIf="registerForm.get('email')?.errors?.['email']">Podaj prawidłowy adres email</small>
+        </div>
+        <br>
+        <input type="password" placeholder="Hasło" formControlName="password">
+        <div class="center-error" *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.invalid">
+          <small class="error" *ngIf="registerForm.get('password')?.errors?.['required']">Hasło jest wymagane</small>
+        </div>
+        <br>
+        <input type="text" placeholder="Przedmiot" formControlName="subject">
+        <div class="center-error" *ngIf="registerForm.get('subject')?.touched && registerForm.get('subject')?.invalid">
+          <small class="error" *ngIf="registerForm.get('subject')?.errors?.['required']">Przedmiot jest wymagany</small>
+        </div>
+      </form>
+      <div>
+        <mat-radio-group [(ngModel)]="selectedRole" [value]="defaultRole"  class="example-radio-group" (change)="onRoleChange()">
+          <mat-radio-button value="user" class="radio-button" color="primary">Użytkownik</mat-radio-button>
+          <mat-radio-button value="tutor"class="radio-button" color="primary">Korepetytor</mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <button mat-button [disabled]="registerForm.invalid" (click)="onRegister()">Rejestruj</button>
+      <button mat-button (click)="onChange()">Logowanie</button>
+      <p *ngIf="isRegisterError">Email jest już zajęty</p>
+    </div>
+  </ng-template>
+</div>

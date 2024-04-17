@@ -1,0 +1,13 @@
+<div class="header-container">
+  <div class="navbar">
+    <app-page-logo (click)="onLogo()"></app-page-logo>
+    <app-search-input></app-search-input>
+    <button mat-button class="custom-color announcements-button" (click)="onAnnouncements()">ogloszenia</button>
+    <button mat-button class="right-margin custom-color margin-left" (click)="onProfile()" [disabled]="isButtonDisabled">
+      profil
+    </button>
+    <button mat-button class="right-margin custom-color" (click)="onLoginLogout()" >
+      {{ buttonLoginLogoutText }}
+    </button>
+  </div>
+</div>

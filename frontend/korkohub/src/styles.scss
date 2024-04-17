@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Honk&display=swap');
+@import './colors';
+
+html, body{ 
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: -1;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-image: linear-gradient(to right top, #4b0082, #3c197d, #302475, #282a6b, #262e60);  
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+app-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #87CEFA;
+    position: fixed;
+    width: 100%;
+}

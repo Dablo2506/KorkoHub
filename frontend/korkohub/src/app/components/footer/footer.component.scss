@@ -1,0 +1,40 @@
+@import './../../../colors';
+
+.footer {
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $dark;
+    margin-top: auto;
+
+}
+
+.footer-elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $pink;
+}
+
+p{
+    margin-right: 50px;
+    margin-left: 50px;
+    transition: text-shadow 0.3s;
+}
+
+.link{
+    cursor: pointer;
+
+    &:hover{
+        text-shadow: 1px 1px 1px $pink;
+    }
+}
+
+.mail-text{
+    text-decoration: none;
+    color: $pink;
+}
+
+.not-to-copy{
+    user-select: none;
+}

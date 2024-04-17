@@ -1,0 +1,36 @@
+@import './../../../colors';
+
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 0 12px 0;
+  background-color: $dark;
+  z-index: 5;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+app-page-logo{
+  margin: 0 20% 0 7%;
+}
+
+button.custom-color{
+  font-family: BEBAS NEUE, sans-serif;
+  font-size: 20px;
+  color: $pink;
+  margin-right: 1%;
+
+}
+
+button.custom-color:disabled{
+  color: grey;
+}
+
+.announcements-button {
+  margin-left: 14%
+}

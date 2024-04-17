@@ -1,0 +1,11 @@
+<div class="ad">
+    <div class="data">
+      <p class="tutorData">{{name}} {{surname}}</p>
+      <p class="subject">{{tutorAdDetails?.subject}}</p>
+      <p class="subject price">{{tutorAdDetails?.price}}&nbsp;PLN</p>
+      <button mat-button class="right-margin custom-color" (click)="onSign()" [disabled]="!isLoggedUser || !isLogged">{{buttonFunction}}</button>
+    </div>
+    <div class="description">
+      <p>{{tutorAdDetails?.description}}</p>
+    </div>
+</div>

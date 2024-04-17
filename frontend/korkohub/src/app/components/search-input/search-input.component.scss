@@ -1,0 +1,37 @@
+@import './../../../colors';
+
+.search-input {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    width: 240px;
+    border-radius: 25px 0 0 25px;
+    transition: box-shadow 0.3s;
+
+    &:hover{
+        box-shadow: 0 0 10px 0 rgba(255,255,255,0.5);
+    }
+    &:focus {
+        box-shadow: 0 0 18px 0 rgba(255,255,255,0.5);
+    }
+}
+
+.search-button {
+    padding: 10px;
+    font-size: 17px;
+    background: $pink;
+    color: white;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    & i{
+        font-size: 14px;
+    }
+
+    &:hover{
+        background-color: $salmon;
+    }
+}

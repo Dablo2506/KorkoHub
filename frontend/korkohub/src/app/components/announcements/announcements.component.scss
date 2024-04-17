@@ -1,0 +1,35 @@
+@import './../../../colors';
+
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 60%;
+    z-index: -1;
+    margin-top: -280px;
+    transform: translateX(-50%);
+    padding-bottom: 4%;
+}
+
+p{
+    font-family: bebas neue, serif;
+    font-size: 26px;
+    color: $error;
+}
+
+button.custom-color{
+    font-family: BEBAS NEUE, sans-serif;
+    font-size: 50px;
+    color: $pink;
+    background-color: $dark;
+    margin-left: 5%;
+    margin-top: 8%;
+    height: 150px;
+    width: 250px;
+    z-index: -1;
+    position: absolute;
+  }
+
+  button.custom-color:disabled{
+    color:gray;
+  }

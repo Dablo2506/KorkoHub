@@ -1,0 +1,141 @@
+@import './../../../colors';
+  
+  .left {
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .right {
+    flex: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15vw
+
+  }
+
+.profile-card{
+    color: white;
+    width: 85%;
+    height: 77%;
+    background-color: $navy;
+    margin-left: -25vw;
+    margin-top: -3vh;
+
+}
+
+.menu-card{
+  color: white;
+  width: 48%;
+  background-color: $navy;
+  margin-top: -35vh;
+  margin-left: -4vw;
+}
+
+
+.profile-card-content {
+  margin-left: 30%;
+  margin-right: 20%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.menu-card-content{
+  margin-left: 45px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.profile-info-buttons{
+  height: 55px ;
+  margin-top: -10%;
+  margin-left: 30px;
+}
+
+button.custom-color{
+  font-family: BEBAS NEUE, sans-serif;
+  font-size: 20px;
+  color: $pink;
+  margin-right: 1%;
+
+
+  &.margin-left{
+    margin-left: 25%;
+  }
+}
+
+button.custom-color:disabled{
+  color:gray
+}
+
+.mdc-button{
+  border-top-width: 100px !important;
+}
+
+.header{
+  font-size: 40px;
+  font-family: BEBAS NEUE, sans-serif;
+}
+
+.personal-data{
+  margin-top: 30px;
+}
+
+img{
+  margin-left: -30px;
+  margin-top: 20px;
+  margin-bottom: -40px;
+}
+
+.personal-data{
+  font-size: 30px;
+  margin-left: -60px;
+  font-family: BEBAS NEUE, sans-serif;
+
+}
+
+.button-container{
+  display: flex;
+  margin-top: 55px;
+  margin-left: -20px;
+
+}
+
+
+.profile-info {
+  white-space: pre-line;
+}
+
+.tutorEditLabels {
+  margin-top: -30px ;
+}
+
+.userEditLabels {
+  margin-top: 20px;
+}
+
+.editInputs{
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 24px;
+  color: $purple;
+  font-weight: bold;
+  color:$pink
+}
+
+.button-container-tutor {
+  display: flex;
+  margin-top: 20px;
+  margin-left: -20px;
+}

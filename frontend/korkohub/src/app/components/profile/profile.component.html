@@ -1,0 +1,85 @@
+<div class="background">
+  <div class="left">
+    <mat-card class="menu-card">
+      <div class="menu-card-content">
+      <mat-card-header>
+        <mat-card-title class="custom-color header">Opcje</mat-card-title>
+      </mat-card-header>
+      <mat-card-actions>
+        <button mat-button class="custom-color" (click)="onProfile()">Dane osobowe</button>
+      </mat-card-actions>
+      <mat-card-actions>
+        <button mat-button class="custom-color" (click)="onSigned()" [disabled]="!isUserLogged">Zarezerwowane zajęcia</button>
+      </mat-card-actions>
+      <mat-card-actions>
+        <button mat-button class="custom-color" (click)="myAds()" [disabled]="!isTutorLogged">Moje Ogłoszenia </button>
+      </mat-card-actions>
+      <mat-card-actions>
+        <button mat-button class="custom-color">Ustawienia prywatności</button>
+      </mat-card-actions> 
+    </div>
+    </mat-card>
+  </div>
+  <div class="right">
+    <mat-card class="profile-card">
+      <div class="profile-card-content">
+      <mat-card-header>
+        <mat-card-title class="profile-title header">Dane profilu</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="personal-data">
+        <ng-container *ngIf="isUserLogged">
+        <form [formGroup]="userForm" (ngSubmit)="updateUser()">
+
+          <label for="name" class="userEditLabels">Imie: </label>
+          <input id="name" type="text" formControlName="name" class="editInputs">
+          
+          <label for="surname" class="userEditLabels">Nazwisko: </label>
+          <input id="surname" type="text" formControlName="surname" class="editInputs">
+
+          <label for="email" class="userEditLabels">Email: </label>
+          <input id="email" type="text" formControlName="email" class="editInputs">
+        
+          <label for="balance" class="userEditLabels">Środki: </label>
+          <input id="balance" type="number" formControlName="balance" class="editInputs">
+          <div class="button-container">
+            <mat-card-actions>
+              <button mat-button class="custom-color profile-info-buttons" type="submit">Zapisz dane</button>
+            </mat-card-actions>
+            <mat-card-actions>
+              <button mat-button class="custom-color profile-info-buttons" (click)="onDeleteUser()" type="button">Usuń konto</button>
+            </mat-card-actions>
+          </div>
+        </form>
+      </ng-container>
+      <ng-container *ngIf="isTutorLogged">
+      <form [formGroup]="tutorForm" (ngSubmit)="updateTutor()">
+
+        <label for="name" class="tutorEditLabels">Imie: </label>
+        <input id="name" type="text" formControlName="name" class="editInputs">
+        
+        <label for="surname" class="tutorEditLabels">Nazwisko: </label>
+        <input id="surname" type="text" formControlName="surname" class="editInputs">
+
+        <label for="email" class="tutorEditLabels">Email: </label>
+        <input id="email" type="text" formControlName="email" class="editInputs">
+
+        <label for="subject" class="tutorEditLabels">Przedmiot: </label>
+        <input id="subject" type="text" formControlName="subject" class="editInputs">
+      
+        <label for="balance" class="tutorEditLabels">Środki: </label>
+        <input id="balance" type="number" formControlName="balance" class="editInputs">
+        <div class="button-container-tutor">
+          <mat-card-actions>
+            <button mat-button class="custom-color profile-info-buttons" type="submit">Zapisz dane</button>
+          </mat-card-actions>
+          <mat-card-actions>
+            <button mat-button class="custom-color profile-info-buttons" (click)="onDeleteTutor()" type="button">Usuń konto</button>
+          </mat-card-actions>
+        </div>
+      </form>
+    </ng-container>
+      </mat-card-content>
+      </div>
+    </mat-card>
+  </div>
+</div>

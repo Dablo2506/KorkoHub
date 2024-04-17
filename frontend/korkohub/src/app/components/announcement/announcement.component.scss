@@ -1,0 +1,54 @@
+@import './../../../colors';
+
+.ad {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: linear-gradient($salmon, $navy);
+    color: white;
+    display: flex;
+    width: 750px;
+}
+
+.description {
+    margin-left: 50px;
+    margin-right: 20px;
+    font-size: 22px;
+    overflow-wrap: break-word; 
+    word-wrap: break-word;
+}
+
+.data {
+    margin-top: -25px;
+    width: 400px;
+    margin-left: 50px;
+
+}
+
+.tutorData {
+    font-size: 28px;
+    color: $dark;
+}
+
+.subject {
+    color: $dark;
+    font-size: 24px;
+    margin-top: -15px;
+}
+
+button.custom-color{
+    font-family: BEBAS NEUE, sans-serif;
+    font-size: 20px;
+    margin-top: -15px;
+    color: $pink;
+    background-color: $dark;
+  }
+
+
+  button.custom-color:disabled{
+    color: grey;
+  }
+  .price{
+    color: white;
+    font-weight: bold;
+  }

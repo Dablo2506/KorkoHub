@@ -1,0 +1,94 @@
+@import "../../../colors";
+
+.dialog{
+    background-color:$dark ;
+    width: 100%;
+    height: 100%;
+    color:white;
+
+}
+
+.description{
+    font-family: BEBAS NEUE, sans-serif;
+     font-size: 40px;
+     margin-top: 8%;
+     margin-left: 23%;
+     margin-right: 50px;
+}
+
+.search-input {
+    font-size: 23px;
+    border: none;
+    outline: none;
+    width: 540px;
+    height: 180px;
+    margin-left: 30px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s;
+    margin-top: -30px;
+
+    &:hover{
+        box-shadow: 0 0 10px 0 rgba(255,255,255,0.5);
+    }
+    &:focus {
+        box-shadow: 0 0 18px 0 rgba(255,255,255,0.5);
+    }
+}
+
+button.custom-color{
+    font-family: BEBAS NEUE, sans-serif;
+    font-size: 25px;
+    color: $pink;
+    background-color: $dark;
+    margin-left: 45%;
+    margin-top: 2%;
+    height: 50px;
+    width: 50px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-top: -25px;
+  }
+
+
+  .icon-button{
+    color: $pink;
+    margin-top: -50px;
+    min-width: 20px;  
+  }
+
+
+  button.custom-color:disabled{
+    color: grey;
+  }
+
+
+  .search-input-price {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    width: 525px;
+    border-radius: 5px;
+    margin-left: 30px;
+    transition: box-shadow 0.3s;
+    //margin-top:0px;
+
+    &:hover{
+        box-shadow: 0 0 10px 0 rgba(255,255,255,0.5);
+    }
+    &:focus {
+        box-shadow: 0 0 18px 0 rgba(255,255,255,0.5);
+    }
+}
+
+.price{
+  font-family: BEBAS NEUE, sans-serif;
+   font-size: 40px;
+   margin: 20px 50px 20px 230px ;
+}
+
